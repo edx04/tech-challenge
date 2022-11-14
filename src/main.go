@@ -45,7 +45,7 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	name := fmt.Sprintf("%v", body["name"])
 	lastName := fmt.Sprintf("%v", body["lastName"])
 	sender := fmt.Sprintf("%v", body["sender"])
-	receiver := fmt.Sprintf("%v", body["email"])
+	receiver := fmt.Sprintf("%v", body["receiver"])
 
 	if name == "" || lastName == "" || sender == "" || receiver == "" {
 		return events.APIGatewayProxyResponse{
