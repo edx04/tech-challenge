@@ -51,7 +51,7 @@ You can find your API Gateway Endpoint URL in the output values displayed after 
 
 ### Upload csv file to s3
 
-After deploy the aplication you must upload the csv file with the data to an s3 bucket
+After deploy the aplication you must upload the csv file to s3 bucket
 
 ```bash
 aws s3 cp data/txns.csv  s3://$(aws s3 ls | grep -oh "transactions-.*$")
