@@ -105,6 +105,11 @@ Response
 }
 
 
+Example
+
+    ![alt text](/img/img1.png?raw=true "Email")
+
+
 
 
 
