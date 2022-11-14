@@ -30,7 +30,7 @@ Read more about [SAM Build here](https://docs.aws.amazon.com/serverless-applicat
 sam build
 ```
 
-## Packaging and deployment
+## Deployment
 
 
 To deploy your application for the first time, run the following in your shell:
@@ -76,4 +76,37 @@ Because this aplication is in the sandbox the recipient address also must be ver
    aws ses verify-email-identity --email-address recipient@example.com
 
 ```
+
+## Test the application
+
+for test the apllication you nedt to send the next POST request to the endpoint that you obtain in the deployment step
+
+### POST /email
+
+#### Parameters
+
+| Name     | Required | Type   |
+|----------|----------|--------|
+| name     | required | string |
+| lastName | required | string |
+| sender   | required | string |
+| reciver  | required | string |
+
+
+**Example**
+
+
+Body
+
+{"name": "Edgar","lastName": "Arellano","reciver":"egst-x-306@hotmail.com","sender":"ed04alb@gmail.com"}
+
+Response 
+{
+    Email id 01000184783aafb5-fcb5e753-610c-4a83-b6e1-43c8495317d2-000000
+}
+
+
+
+
+
 
