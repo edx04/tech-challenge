@@ -79,7 +79,7 @@ Because this aplication is in the sandbox the recipient address also must be ver
 
 ## Test the application
 
-for test the apllication you nedt to send the next POST request to the endpoint that you obtain in the deployment step
+for test the apllication you need to send this request to the endpoint that you obtain in the deployment step
 
 ### POST /email
 
@@ -95,7 +95,6 @@ for test the apllication you nedt to send the next POST request to the endpoint 
 
 **Example**
 
-
 Body
 
 {"name": "Edgar","lastName": "Arellano","reciver":"egst-x-306@hotmail.com","sender":"ed04alb@gmail.com"}
@@ -104,6 +103,8 @@ Response
 {
     Email id 01000184783aafb5-fcb5e753-610c-4a83-b6e1-43c8495317d2-000000
 }
+
+
 
 
 
